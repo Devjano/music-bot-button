@@ -1,6 +1,7 @@
 {
-    "name": "music bot button",
+    "name": "rexom",
     "version": "1.0.0",
+    "description": "Play your favorite playlist with rexom",
     "main": "./src/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
