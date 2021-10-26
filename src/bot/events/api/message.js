@@ -56,6 +56,6 @@ module.exports = async(client, message) => {
         command.run(client, message, args, user);
     } catch (err) {
         console.log(err);
-        message.channel.send("<a:jano_26:799630865474256972> | **Something went wrong** ```js" + err + "```");
+        message.channel.send(":x:  | **Something went wrong** ```js" + err + "```");
     }
 };
