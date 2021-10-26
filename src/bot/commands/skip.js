@@ -43,7 +43,7 @@ module.exports = {
                     distube.skip(message);
                     message.channel.send(
                             new MessageEmbed()
-                            .setColor('BLUE')
+                            .setColor('RANDOM')
                             .setDescription(`⏭ | ${queue.songs.map((song, id) =>
         `**[${song.name}](${song.url})**`).slice(0, 1).join("\n")} has skiped to ${queue.songs.map((song, id) =>
         `**[${song.name}](${song.url})**`).slice(1, 2).join("\n")}`)
