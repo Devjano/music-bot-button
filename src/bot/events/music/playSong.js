@@ -5,7 +5,7 @@ module.exports = async function(client, message, queue, song) {
         .setAuthor(song.name, song.thumbnail, song.url)
         .setColor('BLUE')
         .setThumbnail(song.thumbnail)
-        .setDescription(`<a:jano_50:872719123770114058> | **__[${song.name}](${song.url})__** **is playing now**`)
+        .setDescription(`:white_check_mark:  | **__[${song.name}](${song.url})__** **is playing now**`)
         .setFooter(song.formattedDuration + ` | ${song.likes}👍 ${song.dislikes}👎`);
     const stop = new MessageButton()
         .setStyle('red')
