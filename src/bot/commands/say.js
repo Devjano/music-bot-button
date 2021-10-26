@@ -9,7 +9,7 @@ module.exports = {
             if (!voiceChannel) {
                 message.channel.send({
                     embed: {
-                        title: `<a:jano_26:799630865474256972> | Error`,
+                        title: `:x:  | Error`,
                         description: `**you have to be in a voice channel to use this command**`,
                         color: 0xF70000
                     }
@@ -20,7 +20,7 @@ module.exports = {
             if (!permissions.has('CONNECT') || !permissions.has('SPEAK')) {
                 message.channel.send({
                     embed: {
-                        title: `<a:jano_26:799630865474256972> | Error`,
+                        title: `:x:  | Error`,
                         description: `**the bot need's same permissions to play a music like** \`CONNECT\`, \`SPEAK\``,
                         color: 0xF70000
                     }
@@ -30,7 +30,7 @@ module.exports = {
             if (!args.length) {
                 message.channel.send({
                     embed: {
-                        title: `<a:jano_26:799630865474256972> | Error`,
+                        title: `:x:  | Error`,
                         description: `**please type the filter name after the command <3d/bassboost/echo/karaoke/nightcore/vaporwave>**`,
                         color: 0xF70000
                     }
@@ -42,7 +42,6 @@ module.exports = {
                 broadcast.play(require('discord-tts').getVoiceStream(args.join(' ')));
                 connection.play(broadcast);
             });
-            message.react('<a:jano_50:872719123770114058>')
         } catch (err) {
             console.log(err)
         }
