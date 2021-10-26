@@ -11,7 +11,7 @@ module.exports = {
             if (!voiceChannel) {
                 message.channel.send({
                     embed: {
-                        title: `<a:jano_26:799630865474256972> | Error`,
+                        title: `:x:  | Error`,
                         description: `**you have to be in a voice channel to use this command**`,
                         color: 0xF70000
                     }
@@ -22,7 +22,7 @@ module.exports = {
             if (!permissions.has('CONNECT') || !permissions.has('SPEAK')) {
                 message.channel.send({
                     embed: {
-                        title: `<a:jano_26:799630865474256972> | Error`,
+                        title: `:x:  | Error`,
                         description: `**the bot need's same permissions to play a music like** \`CONNECT\`, \`SPEAK\``,
                         color: 0xF70000
                     }
@@ -32,7 +32,7 @@ module.exports = {
             if (!args.length) {
                 message.channel.send({
                     embed: {
-                        title: `<a:jano_26:799630865474256972> | Error`,
+                        title: `:x:  | Error`,
                         description: `**you have to type the song <name/url> after the command**`,
                         color: 0xF70000
                     }
@@ -50,7 +50,7 @@ module.exports = {
 // if (!voiceChannel) {
 //     message.channel.send({
 //         embed: {
-//             title: `<a:jano_26:799630865474256972> | Error`,
+//             title: `:x:  | Error`,
 //             description: `**you have to be in a voice channel to use this command**`,
 //             color: 0xF70000
 //         }
@@ -61,7 +61,7 @@ module.exports = {
 // if (!permissions.has('CONNECT') || !permissions.has('SPEAK')) {
 //     message.channel.send({
 //         embed: {
-//             title: `<a:jano_26:799630865474256972> | Error`,
+//             title: `:x:  | Error`,
 //             description: `**the bot need's same permissions to play a music like** \`CONNECT\`, \`SPEAK\``,
 //             color: 0xF70000
 //         }
@@ -72,7 +72,7 @@ module.exports = {
 // if (!args.length) {
 //     message.channel.send({
 //         embed: {
-//             title: `<a:jano_26:799630865474256972> | Error`,
+//             title: `:x:  | Error`,
 //             description: `**you have to type the song <name/url> after the command**`,
 //             color: 0xF70000
 //         }
@@ -107,7 +107,7 @@ module.exports = {
 //     } else {
 //         message.channel.send({
 //             embed: {
-//                 title: `<a:jano_26:799630865474256972> | Error`,
+//                 title: `:x:  | Error`,
 //                 description: `**thar are no songs in [youtube](https://youtube.com/) with this keywords**`,
 //                 color: 0xF70000
 //             }
@@ -133,7 +133,7 @@ module.exports = {
 //         client.queue(message.guild.id);
 //         message.channel.send({
 //             embed: {
-//                 title: `<a:jano_26:799630865474256972> | Error`,
+//                 title: `:x:  | Error`,
 //                 description: `**There was an a error in the connection**`,
 //                 color: 0xF70000
 //             }
@@ -149,13 +149,13 @@ module.exports = {
 //         embed.setAuthor(song.title, client.user.avatarURL({ dynamic: true }), song.url)
 //             .setColor('GREEN')
 //             .setThumbnail(song.thumbnail)
-//             .setDescription(`<a:jano_50:872719123770114058> | **__[${song.title}](${song.url})__** **has been added to the queue**`)
+//             .setDescription(`:x:  | **__[${song.title}](${song.url})__** **has been added to the queue**`)
 //             .setFooter(likes)
 //     } else {
 //         embed.setAuthor(song.title, client.user.avatarURL({ dynamic: true }), song.url)
 //             .setColor('GREEN')
 //             .setThumbnail(song.thumbnail)
-//             .setDescription(`<a:jano_50:872719123770114058> | **__[${song.title}](${song.url})__** **has been added to the queue**`)
+//             .setDescription(`:white_check_mark: | **__[${song.title}](${song.url})__** **has been added to the queue**`)
 //             .setFooter(song.duration)
 //     }
 //     return message.channel.send({ embed: embed })
@@ -189,13 +189,13 @@ const player = async function(guild, song, client, message) {
         embed.setAuthor(song.title, song.thumbnail || client.user.avatarURL({ dynamic: true }), song.url)
             .setColor('GREEN')
             .setThumbnail(song.thumbnail || client.user.avatarURL({ dynamic: true }))
-            .setDescription(`<a:jano_50:872719123770114058> | **__[${song.title}](${song.url})__** **is playing now**`)
+            .setDescription(`:white_check_mark: | **__[${song.title}](${song.url})__** **is playing now**`)
             .setFooter(likes)
     } else {
         embed.setAuthor(song.title, song.thumbnail, song.url)
             .setColor('GREEN')
             .setThumbnail(song.thumbnail)
-            .setDescription(`<a:jano_50:872719123770114058> | **__[${song.title}](${song.url})__** **is playing now**`)
+            .setDescription(`:white_check_mark: | **__[${song.title}](${song.url})__** **is playing now**`)
             .setFooter(song.duration)
     }
     await message.channel.send({ embed: embed })
