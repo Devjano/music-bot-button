@@ -64,7 +64,7 @@ module.exports = {
             distube.setVolume(message, args[0]);
             message.channel.send(
                 new MessageEmbed()
-                .setColor('BLUE')
+                .setColor('RANDOM')
                 .setTitle(`🔊 | **Volume level has changed to** \`${args[0]}\``)
             )
         } catch (err) {
