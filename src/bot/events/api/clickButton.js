@@ -6,7 +6,7 @@ module.exports = async function(client, button) {
             if (!queue) {
                 button.channel.send({
                     embed: {
-                        title: `<a:jano_26:799630865474256972> | Error`,
+                        title: `:x:  | Error`,
                         description: `**the server queue is empty please play a music first**`,
                         color: 0xF70000
                     }
@@ -21,7 +21,7 @@ module.exports = async function(client, button) {
             if (ownerID !== button.clicker.user.id) {
                 button.channel.send({
                     embed: {
-                        title: `<a:jano_26:799630865474256972> | Error`,
+                        title: `:x:  | Error`,
                         description: `**only the song owner <@!${ownerID}> can control the music buttons**`,
                         color: 0xF70000
                     }
