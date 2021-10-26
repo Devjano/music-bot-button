@@ -3,7 +3,7 @@ module.exports = async function(client, message, queue, playlist, song) {
     message.channel.send(
         new MessageEmbed()
         .setAuthor(playlist.name, client.user.avatarURL({ dynamic: true }), playlist.url)
-        .setColor('BLUE')
+        .setColor('RANDOM')
         .setDescription(`__**[${playlist.name}](${playlist.url})**__ playlist has  __**${playlist.total_items}**__ **songs is playing now**`)
     )
 }
