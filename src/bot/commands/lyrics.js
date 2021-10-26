@@ -36,7 +36,7 @@ module.exports = {
             message.channel.send(
                 new MessageEmbed()
                 .setAuthor(`📑 | Lyrics`, thumbnail, url)
-                .setColor('BLUE')
+                .setColor('RANDOM')
                 .setThumbnail(thumbnail)
                 .setDescription(lyrics)
                 .setFooter(client.user.username, client.user.avatarURL({ dynamic: true }))
