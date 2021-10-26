@@ -10,7 +10,7 @@ module.exports = {
             if (!voiceChannel) {
                 message.channel.send({
                     embed: {
-                        title: `<a:jano_26:799630865474256972> | Error`,
+                        title: `:x:  | Error`,
                         description: `**you have to be in a voice channel to use this command**`,
                         color: 0xF70000
                     }
@@ -21,7 +21,7 @@ module.exports = {
             if (!permissions.has('CONNECT') || !permissions.has('SPEAK')) {
                 message.channel.send({
                     embed: {
-                        title: `<a:jano_26:799630865474256972> | Error`,
+                        title: `:x:  | Error`,
                         description: `**the bot need's same permissions to play a music like** \`CONNECT\`, \`SPEAK\``,
                         color: 0xF70000
                     }
@@ -31,7 +31,7 @@ module.exports = {
             voiceChannel.join();
             message.channel.send(
                 new MessageEmbed()
-                .setColor('BLUE')
+                .setColor('RANDOM')
                 .setDescription(`🗃️ | **Done Joined** <#${voiceChannel.id}>`)
             )
         } catch (err) {
