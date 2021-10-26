@@ -43,7 +43,7 @@ module.exports = {
             distube.stop(message);
             message.channel.send(
                 new MessageEmbed()
-                .setColor('BLUE')
+                .setColor('RANDOM')
                 .setDescription(`🛑 | **the music player has been disabled**`)
                 .setFooter(client.user.username, client.user.avatarURL({ dynamic: true }))
             )
