@@ -32,7 +32,7 @@ module.exports = {
             voiceChannel.leave();
             message.channel.send(
                 new MessageEmbed()
-                .setColor('BLUE')
+                .setColor('RANDOM')
                 .setDescription(`🗃️ | **Done Leaved** <#${voiceChannel.id}>`)
             )
         } catch (err) {
