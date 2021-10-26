@@ -13,11 +13,27 @@ module.exports = {
                
                
                 .setDescription(`
-> \` play . skip . nowplaying . loop . queue \`
-> \` lyrics . join . pause . resume . radio \`
-> \` stop . filter . prefix  . leave . volume \`
-> \`ping . invite . support . vote . info\`
-  **[ \`invite\` ](https://discord.com/api/oauth2/authorize?client_id=791856757844475914&permissions=0&scope=bot)** , **[ \`support\` ](https://discord.gg/7sEtecbAM6)**   
+> **Info Commands**
+> \`${prefix}play \`
+> \`${prefix}skip \`
+> \`${prefix}nowplaying \`
+> \`${prefix}loop \`
+> \`${prefix}queue \`
+> \`${prefix}lyrics \`
+> \`${prefix}join \`
+> \`${prefix}pause \`
+> \`${prefix}resume \`
+> \`${prefix}radio \`
+> \`${prefix}stop \`
+> \`${prefix}filter \`
+> \`${prefix}prefix \`
+> \`${prefix}leave \`
+> \`${prefix}volume \`
+> \`${prefix}ping \`
+> \`${prefix}invite \`
+> \`${prefix}support \`
+> \`${prefix}info \`
+> **[ \`invite\` ](https://discord.com/api/oauth2/authorize?client_id=791856757844475914&permissions=0&scope=bot)** , **[ \`support\` ](https://discord.gg/7sEtecbAM6)** 
    `);
 
 
