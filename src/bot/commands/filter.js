@@ -54,7 +54,7 @@ module.exports = {
             message.channel.send(
                 new MessageEmbed()
                 .setAuthor(`🎭 | Filters`, client.user.avatarURL({ dynamic: true }), `https://discord.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=6479507312`)
-                .setColor('BLUE')
+                .setColor('RANDOM')
                 .setDescription(`🎭 | **queue filter has been changed to** \`${args[0]}\``)
                 .setFooter(client.user.username, client.user.avatarURL({ dynamic: true }))
             )
