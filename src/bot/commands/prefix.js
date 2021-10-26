@@ -26,7 +26,7 @@ module.exports = {
                     message.channel.send({
                         embed: {
                             color: 0xFF0000,
-                            title: `<a:jano_26:799630865474256972>** | Error**`,
+                            title: `:x: ** | Error**`,
                             description: `This prefix is to long`
                         }
                     }).then(async function(msg) {
