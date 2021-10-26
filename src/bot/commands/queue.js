@@ -43,7 +43,7 @@ module.exports = {
                     message.channel.send(
                             new MessageEmbed()
                             .setAuthor(`Server Queue`, message.guild.iconURL({ dynaimc: true }), `https://discord.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=6479507312`)
-                            .setColor('BLUE')
+                            .setColor('RANDOM')
                             .setThumbnail(message.guild.iconURL({ dynaimc: true }))
                             .setDescription(`__Now Playing:__\n${queue.songs.map((song, id) => `**[${song.name}](${song.url})** | \`${song.formattedDuration}\` | \`Requested By: ${song.user.tag}\``).slice(0, 1).join("\n")}\n\n__Up Next:__\n${queue.songs.map((song, id) => `**${id + 1}**. **[${song.name}](${song.url})** | \`${song.formattedDuration}\` | \`Requested By: ${song.user.tag}\``).slice(1, 10).join("\n")}`)
             .setFooter(client.user.username, client.user.avatarURL({ dynaimc: true }))
