@@ -46,7 +46,7 @@ module.exports = {
             const time = track.duration * 1000;
             const currentTime = queue.currentTime;
             const result = new MessageEmbed()
-                .setColor('BLUE')
+                .setColor('RANDOM')
                 .setAuthor(track.name, track.Thumbnail, track.url)
                 .setDescription(`${client.distube.isPaused(message) === true ? ":pause_button:" : ":arrow_forward:"} | ${progressbar.splitBar(time === 0 ? currentTime : time, currentTime, 10)[0]} \`[${queue.formattedCurrentTime}/${track.formattedDuration}]\``)
                 .setThumbnail(track.Thumbnail)
