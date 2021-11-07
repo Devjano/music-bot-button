@@ -12,7 +12,7 @@ module.exports = {
                
                
                 .setDescription(`
- **[ thanks to join server ](https://discord.gg/2ugMEJubkt)**   
+ **[ thanks to join server ](https://discord.gg/dTNKbPXw9Y)**   
    `);
 
 
